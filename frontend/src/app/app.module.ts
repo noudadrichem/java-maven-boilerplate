@@ -8,10 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
-const socketConfig: SocketIoConfig = {
-  url: 'http://localhost:9090/api/feed/subscribe'
-}
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +18,6 @@ const socketConfig: SocketIoConfig = {
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    SocketIoModule.forRoot(socketConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

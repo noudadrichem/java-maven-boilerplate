@@ -19,4 +19,8 @@ public class Test {
     public boolean addKey(String key) {
         return keys.add(key);
     }
+
+    public String getName() {
+        return name;
+    }
 }
